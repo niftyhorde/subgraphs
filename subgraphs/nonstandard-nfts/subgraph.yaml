@@ -7,7 +7,7 @@ dataSources:
   # CryptoKitties
   - kind: ethereum/contract
     name: CryptoKitties
-    network: mainnet
+    network: goerli
     source:
       address: "0x06012c8cf97BEaD5deAe237070F9587f8E7A266d"
       startBlock: 4605167
@@ -36,10 +36,10 @@ dataSources:
   # CryptoPunks
   - kind: ethereum/contract
     name: CryptoPunks
-    network: mainnet
+    network: goerli
     source:
-      address: "0xb47e3cd837dDF8e4c57F05d70Ab865de6e193BBB"
-      startBlock: 3914495
+      address: "0xf5b71f8d25d3e90b9ec0c08d890853187df4bef4"
+      startBlock: 4000000
       abi: CryptoPunk
     mapping:
       kind: ethereum/events

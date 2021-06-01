@@ -6,10 +6,10 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: IERC721
-    network: mainnet
+    network: goerli
     source:
       abi: IERC721
-      startBlock: 5806610
+      startBlock: 1000000
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -18,9 +18,9 @@ dataSources:
         - Token
       abis:
         - name: IERC721
-          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC721.json
+          file: ../../node_modules/@openzeppelin/contracts/build/contracts/IERC721.json
         - name: IERC721Metadata
-          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC721Metadata.json
+          file: ../../node_modules/@openzeppelin/contracts/build/contracts/IERC721Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,indexed uint256)
           handler: handleApproval
